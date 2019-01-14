@@ -1,7 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a159ec6-c869-4c28-8512-baad84c268a4" name="Default Changelist" comment="" />
+    <list default="true" id="0a159ec6-c869-4c28-8512-baad84c268a4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/flask_app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask_app/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask_app/static/js/responsive-nav.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/web_flask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/web_flask.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/model/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/hello_flask.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/css/bootstrap-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/css/bootstrap-theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/css/bootstrap-theme.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/css/bootstrap-theme.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/css/bootstrap-theme.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/css/bootstrap-theme.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/css/bootstrap.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/css/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/css/css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/css/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/css/nav.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/Thumbs.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/aBorder.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/aBorder.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/aHover.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/aHover.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/bank1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/bank1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/bank2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/bank2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/banner1 - 副本.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/banner1 - 副本.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/banner1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/banner1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/banner2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/banner2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/banner3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/banner3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/banner4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/banner4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/car1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/car1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/car2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/car2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/car3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/car3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/car4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/car4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/cardatl.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/cardatl.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/contact.png" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/contact.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/float_bg.gif" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/float_bg.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/float_s.gif" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/float_s.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/footbg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/footbg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/fuchuang.gif" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/fuchuang.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/fuchuang.png" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/fuchuang.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/h5Bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/h5Bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/hamburger-retina.gif" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/hamburger-retina.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/hamburger.gif" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/hamburger.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/headerBg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/headerBg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/hengfu1 - 副本.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/hengfu1 - 副本.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/hengfu1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/hengfu1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/hengfu1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/hengfu1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/hengfu2 - 副本.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/hengfu2 - 副本.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/hengfu2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/hengfu2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/hengfu2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/hengfu2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/hengfu3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/hengfu3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/hengfu3_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/hengfu3_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/keyijia.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/keyijia.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/left.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/left.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/logoBg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/logoBg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/mai-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/mai-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/mai-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/mai-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/mai-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/mai-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/mai-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/mai-4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/mai.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/mai.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/mai2-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/mai2-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/mai2-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/mai2-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/mai2-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/mai2-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/mai2-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/mai2-4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/mais.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/mais.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/map.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/map.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/more.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/more.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/next.png" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/next.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/next_off.png" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/next_off.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/next_page.png" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/next_page.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/pagericon.png" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/pagericon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/pagination.png" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/pagination.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/phone.png" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/phone.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/phones.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/phones.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/pinggu.gif" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/pinggu.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/prev.png" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/prev.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/prev_off.png" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/prev_off.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/prev_page.png" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/prev_page.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/right.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/right.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/selcar1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/selcar1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/selcar2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/selcar2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/selcar3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/selcar3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/selcar4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/selcar4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/selcar5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/selcar5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/sprite_arrow_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/sprite_arrow_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/sprite_arrow_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/sprite_arrow_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/sprite_arrow_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/sprite_arrow_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/sprite_nav_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/sprite_nav_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/images/zuojian.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/images/zuojian.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/js/html5shiv.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/js/html5shiv.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/js/jquery.DB_gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/js/jquery.DB_gallery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/js/jquery.excoloSlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/js/jquery.excoloSlider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/js/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/js/js.js" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/js/js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/js/respond.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/js/respond.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/js/responsive-nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/model/car.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/static/js/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/static/js/slider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_p/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/templates/index.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,45 +108,53 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/web_flask$hello_flask.coverage" NAME="hello_flask Coverage Results" MODIFIED="1547283506082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flask_p" />
+    <SUITE FILE_PATH="coverage/web_flask$views.coverage" NAME="views Coverage Results" MODIFIED="1547430699092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flask_p" />
+    <SUITE FILE_PATH="coverage/web_flask$hello_flask.coverage" NAME="hello_flask Coverage Results" MODIFIED="1547430558427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flask_p" />
+    <SUITE FILE_PATH="coverage/web_flask$run.coverage" NAME="run Coverage Results" MODIFIED="1547462468525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1902498538">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="2" />
+          <entry key="project.open.time.15" value="2" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="1" />
-          <entry key="js" value="1" />
-          <entry key="py" value="4" />
+          <entry key="html" value="3" />
+          <entry key="js" value="2" />
+          <entry key="py" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="1" />
-          <entry key="JavaScript" value="1" />
-          <entry key="Python" value="4" />
+          <entry key="HTML" value="3" />
+          <entry key="JavaScript" value="2" />
+          <entry key="Python" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="3" />
+          <entry key="Python Console" value="51" />
+          <entry key="dummy" value="12" />
           <entry key="html" value="5" />
-          <entry key="py" value="168" />
+          <entry key="py" value="1157" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="5" />
-          <entry key="Python" value="171" />
+          <entry key="PLAIN_TEXT" value="12" />
+          <entry key="Python" value="1208" />
         </counts>
       </usages-collector>
     </session>
@@ -55,75 +162,52 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flask_p/hello_flask.py">
+        <entry file="file://$PROJECT_DIR$/flask_app/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flask_p/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flask_p/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-              <folding>
-                <element signature="e#1695#1699#0" expanded="true" />
-                <element signature="e#1699#1703#0" expanded="true" />
-                <element signature="e#2145#2149#0" expanded="true" />
-                <element signature="e#2149#2153#0" expanded="true" />
-                <element signature="e#2583#2587#0" expanded="true" />
-                <element signature="e#2587#2591#0" expanded="true" />
-                <element signature="e#3021#3025#0" expanded="true" />
-                <element signature="e#3025#3029#0" expanded="true" />
-                <element signature="e#3515#3519#0" expanded="true" />
-                <element signature="e#3519#3523#0" expanded="true" />
-                <element signature="e#4154#4160#1" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#0;n#td#0;n#tr#4;n#table#0;n#div#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#9132#9138#0" expanded="true" />
-                <element signature="e#9138#9144#0" expanded="true" />
-                <element signature="e#9144#9150#0" expanded="true" />
-                <element signature="e#9151#9157#0" expanded="true" />
-                <element signature="e#9158#9164#0" expanded="true" />
-                <element signature="e#9164#9170#0" expanded="true" />
-                <element signature="e#9170#9176#0" expanded="true" />
-                <element signature="e#9718#9722#0" expanded="true" />
-                <element signature="e#9722#9726#0" expanded="true" />
-                <element signature="e#9957#9961#0" expanded="true" />
-                <element signature="e#9961#9965#0" expanded="true" />
-                <element signature="e#10196#10200#0" expanded="true" />
-                <element signature="e#10200#10204#0" expanded="true" />
-                <element signature="e#10435#10439#0" expanded="true" />
-                <element signature="e#10439#10443#0" expanded="true" />
-                <element signature="e#10666#10670#0" expanded="true" />
-                <element signature="e#10670#10674#0" expanded="true" />
-                <element signature="e#10897#10901#0" expanded="true" />
-                <element signature="e#10901#10905#0" expanded="true" />
-                <element signature="e#11128#11132#0" expanded="true" />
-                <element signature="e#11132#11136#0" expanded="true" />
-                <element signature="n#style#0;n#a#6;n#p#0;n#div#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="253">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/flask_p/static/js/jquery.excoloSlider.js">
+        <entry file="file://$PROJECT_DIR$/manage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="453" column="13" lean-forward="true" selection-start-line="453" selection-start-column="13" selection-end-line="453" selection-end-column="13" />
+            <state relative-caret-position="337">
+              <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="25" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#0#25#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flask_app/model/car.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="314">
+              <caret line="64" column="10" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="10" />
+              <folding>
+                <marker date="1547461795541" expanded="true" signature="24:1047" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://E:/my document/flask_t/Lib/site-packages/sqlalchemy/sql/sqltypes.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="71">
+              <caret line="497" column="44" selection-start-line="497" selection-start-column="44" selection-end-line="497" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flask_app/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -143,18 +227,30 @@
       <find>js</find>
       <find>next.</find>
       <find>next.png</find>
+      <find>next</find>
     </findStrings>
     <replaceStrings>
       <replace>/static/images</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/flask_p/__init__.py" />
         <option value="$PROJECT_DIR$/flask_p/templates/index.html" />
         <option value="$PROJECT_DIR$/flask_p/static/js/jquery.excoloSlider.js" />
         <option value="$PROJECT_DIR$/flask_p/hello_flask.py" />
+        <option value="$PROJECT_DIR$/flask_p/__init__.py" />
+        <option value="$PROJECT_DIR$/flask_p/views.py" />
+        <option value="$PROJECT_DIR$/flask_app/model/Car.py" />
+        <option value="$PROJECT_DIR$/run.py" />
+        <option value="$PROJECT_DIR$/flask_app/views.py" />
+        <option value="$PROJECT_DIR$/flask_app/settings.py" />
+        <option value="$PROJECT_DIR$/flask_app/__init__.py" />
+        <option value="$PROJECT_DIR$/flask_app/model/car.py" />
+        <option value="$PROJECT_DIR$/manage.py" />
       </list>
     </option>
   </component>
@@ -169,12 +265,30 @@
     <option name="width" value="1346" />
     <option name="height" value="697" />
   </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Probable bugsCSS</id>
+          </State>
+          <State>
+            <id>RELAX NG</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -182,10 +296,16 @@
               <item name="web_flask" type="b2602c69:ProjectViewProjectNode" />
               <item name="web_flask" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="web_flask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web_flask" type="462c0819:PsiDirectoryNode" />
+              <item name="flask_app" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -194,7 +314,7 @@
     <property name="last_opened_file_path" value="D:/py3/ppp" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -208,7 +328,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.run">
     <configuration name="hello_flask" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="web_flask" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -222,7 +342,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flask_p/hello_flask.py" />
+      <option name="SCRIPT_NAME" value="D:\web_flask\flask_p\views.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -231,8 +351,59 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="web_flask" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\web_flask\manage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="web_flask" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flask_p" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flask_p/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.hello_flask" />
+      <item itemvalue="Python.views" />
+      <item itemvalue="Python.run" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.run" />
+        <item itemvalue="Python.views" />
         <item itemvalue="Python.hello_flask" />
       </list>
     </recent_temporary>
@@ -263,22 +434,22 @@
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1732224" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18532526" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32850242" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32419354" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.25603864" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.11111111" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49848714" visible="true" weight="0.0048387097" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32850242" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49924356" weight="0.32580644" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32850242" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32850242" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5015129" side_tool="true" weight="0.47903225" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49924356" weight="0.46129033" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49848714" weight="0.2483871" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -311,9 +482,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flask_p/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://E:/my document/flask_t/Lib/site-packages/flask/templating.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-93">
@@ -321,65 +489,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flask_p/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/flask_app/static/js/jquery.excoloSlider.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        <state relative-caret-position="110">
+          <caret line="58" column="40" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_app/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="124" column="13" lean-forward="true" selection-start-line="124" selection-start-column="13" selection-end-line="124" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/my document/flask_t/Lib/site-packages/flask_script/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-13">
+          <caret line="235" column="8" selection-start-line="235" selection-start-column="8" selection-end-line="235" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/my document/flask_t/Lib/site-packages/flask_script/commands.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="746">
+          <caret line="373" column="64" selection-start-line="373" selection-start-column="52" selection-end-line="373" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/my document/flask_t/Lib/site-packages/sqlalchemy/sql/schema.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="1275" column="53" selection-start-line="1275" selection-start-column="53" selection-end-line="1275" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_app/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/my document/flask_t/Lib/site-packages/sqlalchemy/sql/sqltypes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="497" column="44" selection-start-line="497" selection-start-column="44" selection-end-line="497" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_app/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
           <folding>
-            <element signature="e#1695#1699#0" expanded="true" />
-            <element signature="e#1699#1703#0" expanded="true" />
-            <element signature="e#2145#2149#0" expanded="true" />
-            <element signature="e#2149#2153#0" expanded="true" />
-            <element signature="e#2583#2587#0" expanded="true" />
-            <element signature="e#2587#2591#0" expanded="true" />
-            <element signature="e#3021#3025#0" expanded="true" />
-            <element signature="e#3025#3029#0" expanded="true" />
-            <element signature="e#3515#3519#0" expanded="true" />
-            <element signature="e#3519#3523#0" expanded="true" />
-            <element signature="e#4154#4160#1" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#0;n#td#0;n#tr#4;n#table#0;n#div#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#9132#9138#0" expanded="true" />
-            <element signature="e#9138#9144#0" expanded="true" />
-            <element signature="e#9144#9150#0" expanded="true" />
-            <element signature="e#9151#9157#0" expanded="true" />
-            <element signature="e#9158#9164#0" expanded="true" />
-            <element signature="e#9164#9170#0" expanded="true" />
-            <element signature="e#9170#9176#0" expanded="true" />
-            <element signature="e#9718#9722#0" expanded="true" />
-            <element signature="e#9722#9726#0" expanded="true" />
-            <element signature="e#9957#9961#0" expanded="true" />
-            <element signature="e#9961#9965#0" expanded="true" />
-            <element signature="e#10196#10200#0" expanded="true" />
-            <element signature="e#10200#10204#0" expanded="true" />
-            <element signature="e#10435#10439#0" expanded="true" />
-            <element signature="e#10439#10443#0" expanded="true" />
-            <element signature="e#10666#10670#0" expanded="true" />
-            <element signature="e#10670#10674#0" expanded="true" />
-            <element signature="e#10897#10901#0" expanded="true" />
-            <element signature="e#10901#10905#0" expanded="true" />
-            <element signature="e#11128#11132#0" expanded="true" />
-            <element signature="e#11132#11136#0" expanded="true" />
-            <element signature="n#style#0;n#a#6;n#p#0;n#div#11;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flask_p/hello_flask.py">
+    <entry file="file://$PROJECT_DIR$/flask_app/model/car.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="314">
+          <caret line="64" column="10" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="10" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <marker date="1547461795541" expanded="true" signature="24:1047" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flask_p/static/js/jquery.excoloSlider.js">
+    <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="453" column="13" lean-forward="true" selection-start-line="453" selection-start-column="13" selection-end-line="453" selection-end-column="13" />
+        <state relative-caret-position="337">
+          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="25" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>

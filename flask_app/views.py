@@ -1,9 +1,10 @@
-from flask import Flask
 from flask import request
 # from flask import current_app
 from flask import render_template
-app = Flask(__name__)
+from flask_app import app
+from flask_script import Manager, Server
 
+manager = Manager(app)
 
 @app.route('/')
 def index():
@@ -18,8 +19,4 @@ def hello(name):
 
 
 if __name__ == "__main__":
-    app.run(
-        host='127.0.0.1',
-        port=5000,
-        debug=True
-    )
+    manager.run()
