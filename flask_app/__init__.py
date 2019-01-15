@@ -1,13 +1,36 @@
 from flask import Flask
-app = Flask(__name__)
-# from flask_app import views
+from flask_bootstrap import Bootstrap
+from flask_mail import Mail
+from flask_moment import Moment
 from flask_sqlalchemy import SQLAlchemy
+from config import config
+from flask_login import LoginManager
 
-#加载配置文件内容
-app.config.from_object('flask_app.settings')     #模块下的setting文件名，不用加py后缀
-# app.config.from_envvar('FLASKR_SETTINGS')   #环境变量，指向配置文件setting的路径
+login_manager = LoginManager()
+login_manager.session_protection = 'strong'
+login_manager.login_view = 'user.login'
 
-#创建数据库对象
-db = SQLAlchemy(app)
+bootstrap = Bootstrap()
+mail = Mail()
+moment = Moment()
+db = SQLAlchemy()
+# from flask_app.model.car import CarModel, BrandModel, CarDetail
 
-from flask_app.model.car import CarModel, BrandModel, CarDetail
+
+def create_app(config_name):
+    app = Flask(__name__)
+    app.config.from_object(config[config_name])
+    config[config_name].init_app(app)
+    bootstrap.init_app(app)
+    mail.init_app(app)
+    moment.init_app(app)
+    db.init_app(app)
+    login_manager.init_app(app)
+    # 附加路由和自定义的错误页面
+    from flask_app.main import main as main_blueprint
+    from flask_app.main.user import user as user_blueprint
+    from flask_app.main.car import car as car_blueprint
+    app.register_blueprint(main_blueprint)
+    app.register_blueprint(user_blueprint)
+    app.register_blueprint(car_blueprint)
+    return app

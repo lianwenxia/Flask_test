@@ -1,12 +1,12 @@
 from flask_app import db
 
 
-class CarModel(db.Model):
+# 车辆参数
+class CarParm(db.Model):
 
-    __tablename__ = 'model'
-
+    __tablename__ = 'parm'
     id = db.Column(db.Integer, primary_key=True)
-    detail = db.relationship('CarDetail', backref='carmodel')
+    detail = db.relationship('CarDetail', backref='parm')
     # 长宽高
     L_W_H = db.Column(db.String(20), nullable=True)
     # 前 / 后轮距
@@ -30,15 +30,40 @@ class CarModel(db.Model):
     # 乘员数(含驾驶员)
     occupants_num = db.Column(db.Integer, nullable=True)
     def __repr__(self):
-        return '<Id %r>' % self.id
+        return '<id %r>' % self.id
 
+
+# 品牌
+class BrandModel(db.Model):
+
+    __tablename__ = 'brand'
+    id = db.Column(db.Integer, primary_key=True)
+    detail = db.relationship('CarDetail', backref='brand')
+    # 品牌
+    brand = db.Column(db.String(20))
+    def __repr__(self):
+        return '<brand %r>' % self.brand
+
+
+# 车型
+class CarModel(db.Model):
+
+    __tablename__ = 'model'
+    id = db.Column(db.Integer, primary_key=True)
+    detail = db.relationship('CarDetail', backref='model')
+    # 车型
+    car_model = db.Column(db.String(20))
+    def __repr__(self):
+        return '<model %r>' % self.car_model
 
 
 class CarDetail(db.Model):
+
     __tablename__ = 'detail'
     id = db.Column(db.Integer, primary_key=True)
     brand_id = db.Column(db.Integer, db.ForeignKey('brand.id'))
     model_id = db.Column(db.Integer, db.ForeignKey('model.id'))
+    parm_id = db.Column(db.Integer, db.ForeignKey('parm.id'))
     # 车名
     car_name = db.Column(db.String(50))
     # 价格
@@ -58,16 +83,5 @@ class CarDetail(db.Model):
     # 图片
     img = db.Column(db.LargeBinary(length=2048))
     def __repr__(self):
-        return '<Id %r>' % self.id
+        return '<name %r>' % self.car_name
 
-class BrandModel(db.Model):
-
-    __tablename__ = 'brand'
-    id = db.Column(db.Integer, primary_key=True)
-    detail = db.relationship('CarDetail', backref='brand')
-    # 品牌
-    brand = db.Column(db.String(20))
-    # 车型
-    car_model = db.Column(db.String(20))
-    def __repr__(self):
-        return '<Id %r>' % self.brand
