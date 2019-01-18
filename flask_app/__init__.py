@@ -14,7 +14,6 @@ bootstrap = Bootstrap()
 mail = Mail()
 moment = Moment()
 db = SQLAlchemy()
-# from flask_app.model.car import CarModel, BrandModel, CarDetail
 
 
 def create_app(config_name):

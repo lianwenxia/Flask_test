@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .img{
+            width: 175px;
+            height: 255px;
+            display: inline-block;
+            background-size:100% 100%;
+            background-repeat: no-repeat;
+        }
+
+    </style>
+</head>
+<body>
+
+    {% extends "base.html" %}
+    {% import "bootstrap/wtf.html" as wtf %}
+    {% block title %}用户中心{% endblock %}
+    {% block page_content %}
+        <div class="page-header">
+            <h1 class="bs-component">{{ current_user.username }},欢迎您!</h1>
+
+        </div>
+        <div class="bs-docs-section">
+            <div class="col-lg-2">
+                {% if current_user.profile_picture %}
+                    <a href="/user/pro_edit" class="img" style="background-image: url({{ current_user.profile_picture }})"></a>
+                {% else %}
+                    <a href="/user/pro_edit" style="background-image:url('/static/images/1.jpg');"></a>
+                {% endif %}
+            </div>
+            <div class="col-lg-6">
+                <ul class="text-primary">
+                    <li>邮箱：{{current_user.email}}</li>
+                    <li>电话号码：{{current_user.phone}}</li>
+                    <li>地址：{{current_user.location}}</li>
+                    <li>真实姓名：{{current_user.real_name}}</li>
+                    <li>最后访问时间：{{current_user.last_seen}}</li>
+                </ul>
+                <a href="/user/edit" class="btn btn-secondary">edit message!</a>
+            </div>
+        </div>
+    {% endblock %}
+</body>
+</html>

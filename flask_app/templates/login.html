@@ -2,17 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+
 </head>
 <body>
     {% extends "base.html" %}
     {% import "bootstrap/wtf.html" as wtf %}
+    {% block title %}Login{% endblock %}
 
     {% block page_content %}
         <div class="page-header">
-        <h1>Welcome to login!</h1>
+            <h1>XinYuHui-login!</h1>
         </div>
-        {{ wtf.quick_form(form) }}
+        <div class="col-lg-4">
+            <div class="bs-component">
+            {{ wtf.quick_form(form) }}</div>
+        </div>
     {% endblock %}
 </body>
 </html>

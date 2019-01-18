@@ -3,9 +3,11 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 
 class Config:
-    SECRET_KEY = os.environ.get('SECRET_KEY') or 'hard to guess string'
-    # SQLALCHEMY_COMMIT_ON_TEARDOWN = True # Flask - SQLAlchemy 2.0以前使用
-    SQLALCHEMY_TRACK_MODIFICATIONS = True # Flask - SQLAlchemy 2.0以后使用
+    SECRET_KEY = '\xf4T\x00\x14\x06I\xf2\xa7\xa5\x98\xcef\x01e\xc3\xc5\xce\xd6\xd3\x8bL\xef\x16'
+    # SECRET_KEY = os.environ.get('SECRET_KEY') or 'hard to guess string'
+
+
+
     # FLASKY_MAIL_SUBJECT_PREFIX = '[Flasky]'
     # FLASKY_MAIL_SENDER = 'Flasky Admin <flasky@example.com>'
     # FLASKY_ADMIN = os.environ.get('FLASKY_ADMIN')
@@ -23,7 +25,9 @@ class DevelopmentConfig(Config):
     MAIL_USERNAME = '1213284679@qq.com'
     FLASKY_ADMIN = '1213284679@qq.com'
     MAIL_PASSWORD = 'kihknzbjpueubaba'
-
+    UPLOAD_FOLDER = r'D:\web_flask\flask_app\static\save'
+    SQLALCHEMY_COMMIT_ON_TEARDOWN = True # Flask - SQLAlchemy 2.0以前使用
+    SQLALCHEMY_TRACK_MODIFICATIONS = True  # Flask - SQLAlchemy 2.0以后使用
 
     SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:123456@localhost/flask_test'
     # SQLALCHEMY_DATABASE_URI = os.environ.get('DEV_DATABASE_URL')
