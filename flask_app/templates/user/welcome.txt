@@ -1,0 +1,4 @@
+Dear {{ user_obj.username }},
+欢迎注册鑫与汇!
+点击下方链接进行账户确认:
+{{ url_for('user.confirm', token=token, _external=True) }}

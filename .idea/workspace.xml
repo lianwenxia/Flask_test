@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a159ec6-c869-4c28-8512-baad84c268a4" name="Default Changelist" comment="">
+    <list default="true" id="0a159ec6-c869-4c28-8512-baad84c268a4" name="Default Changelist" comment="3">
+      <change afterPath="$PROJECT_DIR$/flask_app/templates/user/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask_app/templates/user/pro_edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask_app/templates/user/welcome.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask_app/templates/user/welcome.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_app/email.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/email.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_app/main/car/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/main/car/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_app/main/user/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/main/user/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_app/main/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/main/user/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_app/model/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/model/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_app/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_app/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_app/templates/user/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/templates/user/userinfo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,13 +64,13 @@
           <entry key="dummy" value="12" />
           <entry key="html" value="1403" />
           <entry key="py" value="4129" />
-          <entry key="txt" value="11" />
+          <entry key="txt" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="1403" />
-          <entry key="PLAIN_TEXT" value="23" />
+          <entry key="PLAIN_TEXT" value="24" />
           <entry key="Python" value="4432" />
         </counts>
       </usages-collector>
@@ -135,11 +127,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flask_app/templates/user/edit.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="138">
-              <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+              <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
               <folding>
                 <element signature="n#style#0;n#h1#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -189,11 +181,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/微博签到_re.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+            <state relative-caret-position="329">
+              <caret line="31" column="27" lean-forward="true" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -351,7 +343,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -517,6 +509,14 @@
       <option name="presentableId" value="Default" />
       <updated>1547268983982</updated>
     </task>
+    <task id="LOCAL-00001" summary="3">
+      <created>1547774945953</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1547774945953</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -531,21 +531,21 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13993949" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2912254" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32419354" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31451613" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.046774194" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49848714" weight="0.36774194" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49924356" weight="0.32580644" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32903227" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50226927" side_tool="true" weight="0.30645162" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4977307" weight="0.30595812" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4977307" visible="true" weight="0.16774194" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49848714" weight="0.30645162" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -582,6 +582,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="3" />
+    <option name="LAST_COMMIT_MESSAGE" value="3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -825,6 +829,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#1306#1412#0" />
+            <element signature="e#1452#1765#0" />
+            <marker date="1547709889241" expanded="true" signature="341:346" ph="..." />
+            <marker date="1547709889241" expanded="true" signature="1850:1967" ph="..." />
+            <marker date="1547709889241" expanded="true" signature="2086:2091" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -876,16 +888,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flask_app/templates/user/edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -922,10 +924,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/微博签到_re.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        <state relative-caret-position="329">
+          <caret line="31" column="27" lean-forward="true" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_app/templates/user/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
