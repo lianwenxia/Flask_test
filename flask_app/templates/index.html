@@ -21,6 +21,9 @@
     <![endif]-->
   </head>
   <body>
+  {% extends "base.html" %}
+
+  {% block content %}
     <div class="heads">
      <div class="top">
       <span class="headerRight"><img src="/static/images/phone.png" width="273" height="19" /></span>
@@ -382,6 +385,6 @@
 		});
 	})
 	</script>
-
+{% endblock %}
   </body>
 </html>

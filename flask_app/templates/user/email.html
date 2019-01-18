@@ -2,23 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
+    <title>Emial</title>
 </head>
 <body>
     {% extends "base.html" %}
     {% import "bootstrap/wtf.html" as wtf %}
-    {% block title %}Login{% endblock %}
-
-    {% block page_content %}
+    <!--{% block title %}fine pwd{% endblock %}-->
+{% block page_content %}
         <div class="page-header">
             <h1>XinYuHui-login!
-                <a href="/user/resetpwd" style="float: right">forget password!</a></h1>
-
+                <!--<a href="/user/resetpwd" style="float: right">forget password!</a></h1>-->
         </div>
         <div class="col-lg-4">
             <div class="bs-component">
             {{ wtf.quick_form(form) }}
-
             </div>
         </div>
     {% endblock %}

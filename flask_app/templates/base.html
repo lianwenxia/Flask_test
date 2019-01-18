@@ -31,7 +31,7 @@
             padding: 0.375rem 0.75rem;
             font-size: 1rem;
             line-height: 1.5;
-            margin-top: 72px;
+            margin-top: 45px;
             border-radius: 255px 25px 225px 25px/25px 225px 25px 255px;
     }
         .control-label{
@@ -43,10 +43,14 @@
         #remember_me:after{
             position: relative;
         }
+
+        a{
+            text-decoration: none;
+        }
     </style>
     {% endblock %}
     {% block body %}
-    <body class style="font-size: 2rem; font-family: Cabin Sketch, cursive; background-image: url('/static/save/xx.jpg')">
+    <body class style="font-size: 2rem; font-family: Cabin Sketch, cursive;">
 
     </body>
     {% block navbar %}
@@ -58,9 +62,27 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarColor02">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="/user/edit">Edit<span class="sr-only">(current)</span></a>
-              </li>
+                {% if current_user.is_authenticated %}
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/user/edit">Edit<span class="sr-only">(current)</span></a>
+                    </li> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/user/register">Register<span class="sr-only">(current)</span></a>
+                    </li>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/user/userinfo">Userinfo<span class="sr-only">(current)</span></a>
+                    </li>&nbsp;&nbsp;&nbsp;&nbsp;
+                    {% if current_user.is_administrator %}
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/user/userlist">User list<span class="sr-only">(current)</span></a>
+                        </li>
+                    {% endif %}
+                {% else %}
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/user/register">Register<span class="sr-only">(current)</span></a>
+                    </li>
+                {% endif %}
+
             </ul>
             <ul class="navbar-nav navbar-right">
                 {% if current_user.is_authenticated %}
@@ -83,7 +105,7 @@
     <div class="container-fluid">
         <div class="bs-docs-section clearfix">
             <div class="row">
-                <div class="col-lg-12  offset-lg-1">{% block page_content %}{% endblock %}</div>
+                <div class="col-lg-10  offset-lg-1">{% block page_content %}{% endblock %}</div>
             </div>
         </div>
 

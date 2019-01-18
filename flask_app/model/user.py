@@ -21,7 +21,7 @@ class User(UserMixin, db.Model):
     real_name = db.Column(db.String(10), default=False)
     last_seen = db.Column(db.DateTime(), default=datetime.datetime.utcnow())
     profile_picture = db.Column(db.String(100), default=False)
-
+    is_administrator = db.Column(db.Boolean, default=False)
 
     # 将password方法变成属性
     @property

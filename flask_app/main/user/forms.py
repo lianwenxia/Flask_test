@@ -1,15 +1,15 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField, BooleanField, PasswordField, FileField
+from wtforms import StringField, SubmitField, BooleanField, PasswordField, FileField, FormField
 from wtforms.validators import DataRequired, Length, Email, Regexp, EqualTo
 from ...model.user import User
 from wtforms import ValidationError
 
 
-class NameForm(FlaskForm):
-    name = StringField('what is your name?', validators=[DataRequired()])
-    password = PasswordField('what is your password?', validators=[DataRequired()])
-    login = SubmitField('login')
-    logout = SubmitField('logout')
+class EmailForm(FlaskForm):
+    email = StringField('what is your email?', validators=[DataRequired()])
+    # password = PasswordField('what is your password?', validators=[DataRequired()])
+    submit = SubmitField('send mail')
+    # logout = SubmitField('logout')
 
 
 class LoginForm(FlaskForm):
@@ -17,6 +17,7 @@ class LoginForm(FlaskForm):
     username = StringField('username: ', validators=[DataRequired()])
     password = PasswordField('password: ', validators=[DataRequired()])
     remember_me = BooleanField('remember me')
+    # email = SubmitField('forget password')
     submit = SubmitField('Login')
 
 
@@ -49,6 +50,16 @@ class EditForm(FlaskForm):
 class ProfileForm(FlaskForm):
     profile_picture = FileField('profile picture: ', validators=[DataRequired()])
     submit = SubmitField('Submit')
+
+
+class PasswordForm(FlaskForm):
+    password = PasswordField('new password', validators=[DataRequired()])
+    comfirmd = PasswordField('comfirm password',
+                             validators=[DataRequired(),
+                                         EqualTo('password', message='密码输入不一致！')])
+
+    submit = SubmitField('submit')
+
 
 
 

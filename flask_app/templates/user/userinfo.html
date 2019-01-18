@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <style>
         .img{
-            width: 175px;
+            width: 160px;
             height: 255px;
+            background-size: cover;
+            background-position: center;
             display: inline-block;
-            background-size:100% 100%;
             background-repeat: no-repeat;
         }
-
+        a{
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
@@ -20,15 +23,18 @@
     {% block title %}用户中心{% endblock %}
     {% block page_content %}
         <div class="page-header">
-            <h1 class="bs-component">{{ current_user.username }},欢迎您!</h1>
+            <h1 class="bs-component">
+                {{ current_user.username }},欢迎您!
+                <a href="/user/resetpwd" style="float: right; ">clcik here to reset password!</a>
+            </h1>
 
         </div>
         <div class="bs-docs-section">
             <div class="col-lg-2">
-                {% if current_user.profile_picture %}
-                    <a href="/user/pro_edit" class="img" style="background-image: url({{ current_user.profile_picture }})"></a>
+                {% if current_user.profile_picture != '0' %}
+                    <a href="/user/pro_edit" class="img" style="background-image: url({{ current_user.profile_picture }});"></a>
                 {% else %}
-                    <a href="/user/pro_edit" style="background-image:url('/static/images/1.jpg');"></a>
+                    <a href="/user/pro_edit"  class="img" style="background-image:url(/static/images/1.jpg);"></a>
                 {% endif %}
             </div>
             <div class="col-lg-6">
@@ -38,6 +44,11 @@
                     <li>地址：{{current_user.location}}</li>
                     <li>真实姓名：{{current_user.real_name}}</li>
                     <li>最后访问时间：{{current_user.last_seen}}</li>
+                    {% if current_user.confirmed %}
+                        <li>账号已确认</li>
+                    {% else %}
+                        <li><a href="/user/confirm">账号未确认，点击发送确认邮件</a></li>
+                    {% endif %}
                 </ul>
                 <a href="/user/edit" class="btn btn-secondary">edit message!</a>
             </div>
