@@ -1,10 +1,16 @@
-from flask import Flask
+from flask import Flask, url_for
 from flask_bootstrap import Bootstrap
 from flask_mail import Mail
 from flask_moment import Moment
 from flask_sqlalchemy import SQLAlchemy
 from config import config
-from flask_login import LoginManager
+from flask_login import LoginManager, current_user
+from flask_admin import Admin, BaseView, expose, form
+
+import os.path as op
+
+file_path = op.join(op.dirname(__file__), 'static')
+
 
 login_manager = LoginManager()
 login_manager.session_protection = 'strong'
@@ -14,6 +20,7 @@ bootstrap = Bootstrap()
 mail = Mail()
 moment = Moment()
 db = SQLAlchemy()
+admin = Admin(name=u'鑫与汇后台', template_mode='bootstrap2')
 
 
 def create_app(config_name):
@@ -24,6 +31,7 @@ def create_app(config_name):
     mail.init_app(app)
     moment.init_app(app)
     db.init_app(app)
+    admin.init_app(app)
     login_manager.init_app(app)
     # 附加路由和自定义的错误页面
     from flask_app.main import main as main_blueprint
@@ -33,3 +41,7 @@ def create_app(config_name):
     app.register_blueprint(user_blueprint)
     app.register_blueprint(car_blueprint)
     return app
+
+
+
+

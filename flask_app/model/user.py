@@ -1,10 +1,14 @@
-from flask_app import db
+from flask_app import db, file_path
 from flask_login import UserMixin
 from werkzeug.security import check_password_hash, generate_password_hash
 from .. import login_manager
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
-from flask import current_app
+from flask import current_app, url_for
 import datetime
+from . import BaseModelview
+from flask_admin import form
+from jinja2 import Markup
+from sqlalchemy.event import listens_for
 
 
 class User(UserMixin, db.Model):
@@ -71,3 +75,29 @@ def load_user(user_id):
     return User.query.get(int(user_id))
 
 
+# admin View视图渲染
+class UserModelview(BaseModelview):
+
+    # 显示的列
+    column_list = ('id', 'profile_picture', 'username', 'email', 'confirmed', 'is_administrator', 'phone')
+    # column_filters = ('password_hash', )
+
+    # 设置缩略图的
+    def _list_thumbnail(view, context, model, name):
+        if not model.profile_picture:
+            return ''
+
+        return Markup('<img src="%s">' % url_for('static',
+                                                 filename=form.thumbgen_filename(model.profile_picture)))
+
+    # 格式化列表的图像显示
+    column_formatters = {
+        'profile_picture': _list_thumbnail
+    }
+    # 扩展列表显示的头像为60*60像素
+    form_extra_fields = {
+        'profile_picture': form.ImageUploadField('Image',
+                                                 base_path=file_path,
+                                                 relative_path='save/',
+                                                 thumbnail_size=(60, 60, True))
+    }

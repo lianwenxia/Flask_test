@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .top_li{
+            float: left;
+            color: white;
+            margin-left: 10px;
+            font-size: 14px;
+            line-height: 40px;
+        }
+        .top_li a{
+            color: white;
+        }
+        .top_li a:hover{
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+    {% block head %}
+    <div class="heads">
+     <div class="top">
+         <ul>
+             {% if current_user.is_authenticated %}
+                <li class="top_li">
+                    <a href="/user/edit">Edit<span class="sr-only">(current)</span></a>
+                </li> &nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="top_li">
+                    <a href="/user/register">Register<span class="sr-only">(current)</span></a>
+                </li>&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="top_li">
+                    <a href="/user/userinfo">Userinfo<span class="sr-only">(current)</span></a>
+                </li>&nbsp;&nbsp;&nbsp;&nbsp;
+                {% if current_user.is_administrator %}
+                    <li class="top_li">
+                        <a href="/user/userlist">User list<span class="sr-only">(current)</span></a>
+                    </li>
+                {% endif %}
+            {% else %}
+            <li class="top_li">
+                <a href="/user/register">Register<span class="sr-only">(current)</span></a>
+            </li>
+            {% endif %}
+
+            {% if current_user.is_authenticated %}
+                <li  class="top_li">
+                    <a href="{{ url_for('users.logout') }}" >Sign Out</a>
+                </li>
+            {% else %}
+                <li  class="top_li">
+                    <a href="{{ url_for('users.login') }}">Sign In</a>
+                </li>
+            {% endif %}
+            </ul>
+      <span class="headerRight"><img src="/static/images/phone.png" width="273" height="19" /></span>
+     </div><!--top/-->
+    </div><!--heads/-->
+    {% endblock %}
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

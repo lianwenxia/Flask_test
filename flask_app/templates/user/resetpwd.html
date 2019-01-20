@@ -10,7 +10,7 @@
     {% block page_content %}
         <h1>Click to reset your password!</h1>
     <p style="height: 400px">
-        {{ url_for('user.reset', token=token, _external=True) }}?email={{ user_obj.email }}
+        {{ url_for('users.reset', token=token, _external=True) }}?email={{ user_obj.email }}
     </p>
     <br>
     {% endblock %}

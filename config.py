@@ -26,6 +26,7 @@ class DevelopmentConfig(Config):
     FLASKY_ADMIN = '1213284679@qq.com'
     MAIL_PASSWORD = 'kihknzbjpueubaba'
     UPLOAD_FOLDER = r'D:\web_flask\flask_app\static\save'
+    CAR_UPLOAD = r'D:\web_flask\flask_app\static\carimg'
     SQLALCHEMY_COMMIT_ON_TEARDOWN = True # Flask - SQLAlchemy 2.0以前使用
     SQLALCHEMY_TRACK_MODIFICATIONS = True  # Flask - SQLAlchemy 2.0以后使用
 

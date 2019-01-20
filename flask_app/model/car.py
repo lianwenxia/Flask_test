@@ -1,5 +1,9 @@
-from flask_app import db
-
+from flask_app import db, file_path
+from . import BaseModelview
+from flask_admin import form
+from jinja2 import Markup
+from flask import url_for
+from sqlalchemy.event import listens_for
 
 # 车辆参数
 class CarParm(db.Model):
@@ -81,7 +85,41 @@ class CarDetail(db.Model):
     # 车龄
     car_age = db.Column(db.String(20), nullable=True)
     # 图片
-    img = db.Column(db.LargeBinary(length=2048))
+    # img = db.Column(db.LargeBinary(length=2048))
+    img = db.relationship('CarImage', backref='detail')
     def __repr__(self):
         return '<name %r>' % self.car_name
 
+
+class CarImage(db.Model):
+    __tablename__ = 'img'
+    id = db.Column(db.Integer, primary_key=True)
+    detail_id = db.Column(db.Integer, db.ForeignKey('detail.id'))
+    img = db.Column(db.String(100))
+    # img = db.Column(db.String(100))
+    def __repr__(self):
+        return '<detail_id %r>' % self.detail_id
+
+
+# admin View视图渲染
+class ImgModelview(BaseModelview):
+
+    # 设置缩略图的
+    def _list_thumbnail(view, context, model, name):
+        if not model.img:
+            return ''
+
+        return Markup('<img src="%s">' % url_for('static',
+                                                 filename=form.thumbgen_filename(model.img)))
+
+    # 格式化列表的图像显示
+    column_formatters = {
+        'img': _list_thumbnail
+    }
+    # 扩展列表显示的头像为60*60像素
+    form_extra_fields = {
+        'img': form.ImageUploadField('CarImage',
+                                     base_path=file_path,
+                                     relative_path='carimg/',
+                                     thumbnail_size=(60, 60, True))
+    }

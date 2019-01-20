@@ -5,12 +5,13 @@ from flask_script import Manager, Server
 from .forms import LoginForm, RegisterForm, EditForm, ProfileForm, EmailForm, PasswordForm
 from ...model.user import User
 from flask_login import login_user, login_required, logout_user, login_required, current_user
-from flask_app import db
+from flask_app import db, file_path, mk_nail
 from flask_mail import Message
 from flask_app import mail
 from flask_app import config
 from flask_app.email import send_email
 import os
+from flask_admin import form as fo_ad
 
 
 @user.route('/')
@@ -23,7 +24,7 @@ def index():
 def before_request():
     if current_user.is_authenticated:
         current_user.ping()
-        if not current_user.is_administrator and request.endpoint == 'user.userlist':
+        if not current_user.is_administrator and request.endpoint == 'users.userlist':
         #     return redirect(url_for('user.userlist'))
         # else:
             abort(400)
@@ -41,7 +42,7 @@ def login():
         user = User.query.filter_by(username=form.username.data).first()
         if user is not None and user.verify_password(form.password.data):
             login_user(user, form.remember_me.data)
-            return redirect(request.args.get('next') or url_for('user.index'))
+            return redirect(request.args.get('next') or url_for('users.index'))
         flash('Invalid username or password.')
     return render_template('login.html', form=form, name=name)
 
@@ -51,7 +52,7 @@ def login():
 def logout():
     logout_user()
     flash('You have been logged out.')
-    return redirect(url_for('user.login'))
+    return redirect(url_for('users.login'))
 
 
 @user.route('/register/', methods=('GET', 'POST'))
@@ -70,7 +71,7 @@ def register():
         # send_email(to=user.email, subject='Hello Flask',
         #            template='user/welcome', user_obj=user, token=token)
         flash('You can now login.')
-        return redirect(url_for('user.login'))
+        return redirect(url_for('users.login'))
     return render_template('register.html', form=form)
 
 
@@ -79,7 +80,7 @@ def register():
 @login_required
 def confirm(token):
     if current_user.confirmed:
-        return redirect(url_for('user.index'))
+        return redirect(url_for('users.index'))
 
     if current_user.confirm(token):
         flash('You have confirmed your account. Thanks!')
@@ -134,8 +135,12 @@ def pro_edit():
 
     if form.validate_on_submit():
         file = request.files['profile_picture']
-        file.save(os.path.join(current_app.config['UPLOAD_FOLDER'], file.filename))
-        current_user.profile_picture = '/static/save/'+file.filename
+        import shutil
+        src_path = os.path.join(current_app.config['UPLOAD_FOLDER'], file.filename)
+        dst_path = os.path.join(current_app.config['UPLOAD_FOLDER'], file.filename[:-4]+'_thumb.jpg')
+        file.save(src_path)
+        mk_nail.image_size_off(current_app.config['UPLOAD_FOLDER'], file.filename)
+        current_user.profile_picture = 'save/'+file.filename
         return redirect(url_for('.userinfo'))
     return render_template('user/pro_edit.html', form=form)
 
@@ -169,7 +174,6 @@ def resetpwd():
 
 @user.route('/reset/<token>', methods=('GET', 'POST'))
 def reset(token):
-    print(token)
     email = request.args.get('email')
     user = User.query.filter_by(email=email).first()
     if user.confirm(token):

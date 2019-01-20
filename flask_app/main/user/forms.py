@@ -28,7 +28,7 @@ class RegisterForm(FlaskForm):
 
     username = StringField('username: ',
                            validators=[DataRequired(), Length(1, 64),
-                            Regexp('^[A-Za-z][A-Za-z0-9_.]*$', 0,
+                            Regexp('^[A-Za-z][A-Za-z0-9_. ]*$', 0,
                                     '用户名要以字母开头！')])
 
     password = PasswordField('password: ',

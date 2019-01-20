@@ -32,7 +32,7 @@
         <div class="bs-docs-section">
             <div class="col-lg-2">
                 {% if current_user.profile_picture != '0' %}
-                    <a href="/user/pro_edit" class="img" style="background-image: url({{ current_user.profile_picture }});"></a>
+                    <a href="/user/pro_edit" class="img" style="background-image: url(/static/{{ current_user.profile_picture }});"></a>
                 {% else %}
                     <a href="/user/pro_edit"  class="img" style="background-image:url(/static/images/1.jpg);"></a>
                 {% endif %}
