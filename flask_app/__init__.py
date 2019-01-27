@@ -11,10 +11,9 @@ import os.path as op
 
 file_path = op.join(op.dirname(__file__), 'static')
 
-
 login_manager = LoginManager()
 login_manager.session_protection = 'strong'
-login_manager.login_view = 'user.login'
+login_manager.login_view = 'users.login'
 
 bootstrap = Bootstrap()
 mail = Mail()
@@ -37,9 +36,11 @@ def create_app(config_name):
     from flask_app.main import main as main_blueprint
     from flask_app.main.user import user as user_blueprint
     from flask_app.main.car import car as car_blueprint
+    from flask_app.api_1_0 import api as api_1_0_blueprint
     app.register_blueprint(main_blueprint)
     app.register_blueprint(user_blueprint)
     app.register_blueprint(car_blueprint)
+    app.register_blueprint(api_1_0_blueprint)  #url_prefix='/api/v1.0'
     return app
 
 

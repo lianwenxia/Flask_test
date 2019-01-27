@@ -57,6 +57,17 @@ class CarModel(db.Model):
     detail = db.relationship('CarDetail', backref='model')
     # 车型
     car_model = db.Column(db.String(20))
+
+
+    def to_json(self):
+        json_model = {
+            'url': url_for('api.get_model', id=self.id, _external=True),
+            'detail': [detail.to_json() for detail in self.detail],
+            'car_model': self.car_model,
+        }
+        return json_model
+
+
     def __repr__(self):
         return '<model %r>' % self.car_model
 
@@ -87,6 +98,23 @@ class CarDetail(db.Model):
     # 图片
     # img = db.Column(db.LargeBinary(length=2048))
     img = db.relationship('CarImage', backref='detail')
+
+    def to_json(self):
+        json_car = {
+            'car_url': url_for('api.get_car', id=self.id, _external=True),
+            'brand_url': url_for('api.get_brand', id=self.brand_id, _external=True),
+            'model_url': url_for('api.get_model', id=self.model_id, _external=True),
+            'parm_url': url_for('api.get_parm', id=self.parm_id, _external=True),
+            'car_name': self.car_name,
+            'price': float(self.price),
+            'register': self.register,
+            'car_addr': self.car_addr,
+
+        }
+
+        return json_car
+
+
     def __repr__(self):
         return '<name %r>' % self.car_name
 
@@ -123,3 +151,5 @@ class ImgModelview(BaseModelview):
                                      relative_path='carimg/',
                                      thumbnail_size=(60, 60, True))
     }
+
+

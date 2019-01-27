@@ -12,11 +12,16 @@ from flask_app import config
 from flask_app.email import send_email
 import os
 from flask_admin import form as fo_ad
+from flask_app.model.car import CarParm, CarDetail, CarImage, CarModel
 
 
 @user.route('/')
 def index():
-
+    user = User.query.filter_by(id=106).first()
+    user.password = '123'
+    # print('**************************')
+    # print(CarDetail.query.filter_by(id=1).first().model)
+    # User.generate_fake(100)
     return render_template('index.html')
 
 
@@ -148,9 +153,14 @@ def pro_edit():
 @user.route('/userlist/')
 @login_required
 def userlist():
-    userlist = User.query.all()
-    print(userlist)
-    return render_template('user/userlist.html', userlist=userlist)
+    page = request.args.get('page', 1, type=int)
+    u_ob = User.query.order_by(User.last_seen.desc())
+    pagination = u_ob.paginate(page=page, per_page=3, error_out=True)
+    userlist = pagination.items
+    # userlist = User.query.all()
+    # print(userlist)
+    # print(pagination)
+    return render_template('user/userlist.html', userlist=userlist, pagination=pagination)
 
 
 @user.route('/resetpwd/', methods=('GET', 'POST')   )

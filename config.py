@@ -18,24 +18,32 @@ class Config:
 
 
 class DevelopmentConfig(Config):
+
     DEBUG = True
+    # 邮箱
     MAIL_SERVER = 'smtp.qq.com'
     MAIL_PORT = 25
     MAIL_USE_TLS = True
-    MAIL_USERNAME = '1213284679@qq.com'
-    FLASKY_ADMIN = '1213284679@qq.com'
-    MAIL_PASSWORD = 'kihknzbjpueubaba'
+    MAIL_USERNAME = os.environ.get('MAIL_USERNAME')  #'1213284679@qq.com'
+    FLASKY_ADMIN = os.environ.get('FLASKY_ADMIN')  #'1213284679@qq.com'
+    MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')  #'kihknzbjpueubaba'
     UPLOAD_FOLDER = r'D:\web_flask\flask_app\static\save'
     CAR_UPLOAD = r'D:\web_flask\flask_app\static\carimg'
+
+    # 数据库
     SQLALCHEMY_COMMIT_ON_TEARDOWN = True # Flask - SQLAlchemy 2.0以前使用
     SQLALCHEMY_TRACK_MODIFICATIONS = True  # Flask - SQLAlchemy 2.0以后使用
 
-    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:123456@localhost/flask_test'
-    # SQLALCHEMY_DATABASE_URI = os.environ.get('DEV_DATABASE_URL')
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DEV_DATABASE_URL')
+    # SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:123456@localhost/flask_test'
+
+    # jsonify的字符串在web显示中文
+    JSON_AS_ASCII = False
 
 
 class TestingConfig(Config):
     TESTING = True
+    # mysql + pymysql: // root: 123456 @ localhost / flask_test_test
     SQLALCHEMY_DATABASE_URI = os.environ.get('TEST_DATABASE_URL') or \
         'sqlite:///' + os.path.join(basedir, 'data-test.sqlite')
 
